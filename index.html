@@ -171,8 +171,9 @@ footer{background:#07182b;color:#b6c6d8;text-align:center;padding:28px 0 90px;fo
   nav.open{display:block}
   nav ul{flex-direction:column}
   .fab{display:flex}
-  .hero::before{inset-inline:0;inset-block:auto 0;height:300px;width:100%;background-image:linear-gradient(180deg,rgba(11,42,74,.08),var(--navy)),url("Background.png");background-position:center,center 24%;background-size:cover}
-  .hero .wrap{padding:220px 0 170px}
+  .hero::before{inset:0;width:100%;background-image:linear-gradient(180deg,rgba(11,42,74,.42),var(--navy) 88%),url("Background.png");background-position:center,center 24%;background-size:cover}
+  html[dir="rtl"] .hero::before{background-image:linear-gradient(180deg,rgba(11,42,74,.42),var(--navy) 88%),url("Background.png")}
+  .hero .wrap{padding:40px 0 170px}
   .hero .wrap>*{max-width:100%}
   section{padding:52px 0}
 }
